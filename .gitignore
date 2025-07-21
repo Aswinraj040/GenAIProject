@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.pipenv/
+
+# SQLite DB files
+*.sqlite3
+*.db
+
+# dotenv environment variables
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Logs and local config
+*.log
+*.pid
+*.bak
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy / Coverage / Pyright
+.mypy_cache/
+.coverage
+htmlcov/
+.pyright/
+
+# FastAPI / Uvicorn / Gunicorn
+instance/
+*.pid
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Ignore Bolt or no-code frontends build artifacts (if any)
+build/
+dist/
+
+# Pydantic compiled files (if using)
+*.pyd
+
+# System-specific
+Thumbs.db
+ehthumbs.db
