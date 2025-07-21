@@ -41,6 +41,20 @@ This project uses **Google's Gemini 1.5 Flash model** via the `google-generative
 
 ---
 
+
+## 🗂 Database Schema (ER Diagram)
+
+<details> <summary>📊 Click to expand Mermaid Diagram</summary>
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+</details>
+
+
 ## 🔧 Setup Instructions
 
 ### 1. 🧬 Clone the Repository
