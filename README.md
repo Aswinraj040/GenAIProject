@@ -72,6 +72,23 @@ erDiagram
 
 ```
 
+## Prompting Strategy
+I have used a structured prompting to give Gemini context about the database schema and clearly instruct it to only return a valid SQL query.
+
+You are a professional data assistant. Convert the following natural language question 
+to an accurate SQL query based on this schema:
+
+Tables:
+Authors(id, name, country)
+Books(id, title, genre, author_id, price)
+Sales(id, book_id, sale_date, quantity)
+
+Return only the SQL query.
+
+Question: {user_query}
+
+This helps reduce hallucinations and ensures Gemini returns only valid SQL matching the schema.
+
 
 ## 🔧 Setup Instructions
 
