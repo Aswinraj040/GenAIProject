@@ -44,15 +44,33 @@ This project uses **Google's Gemini 1.5 Flash model** via the `google-generative
 
 ## 🗂 Database Schema (ER Diagram)
 
-<details> <summary>📊 Click to expand Mermaid Diagram</summary>
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+erDiagram
+    AUTHORS ||--o{ BOOKS : has
+    BOOKS ||--o{ SALES : sold_in
+
+    AUTHORS {
+        INTEGER id PK
+        TEXT name
+        TEXT country
+    }
+
+    BOOKS {
+        INTEGER id PK
+        TEXT title
+        TEXT genre
+        INTEGER author_id FK
+        REAL price
+    }
+
+    SALES {
+        INTEGER id PK
+        INTEGER book_id FK
+        TEXT sale_date
+        INTEGER quantity
+    }
+
 ```
-</details>
 
 
 ## 🔧 Setup Instructions
